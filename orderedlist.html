@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Button for creating OI and LI Element</p>   
+
+    <button onclick="myFunction()">Try it</button>   
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {                          //Ordered Lists and Unordered list using JavaScript.
+            var x = document.createElement("OL");
+            x.setAttribute("id", "myOl");
+            document.body.appendChild(x);
+
+            var y = document.createElement("LI");
+            var t = document.createTextNode("COFFEE");
+            y.appendChild(t);
+            document.getElementById("myOl").appendChild(y);
+        }
+    </script>
+
+</body>
+
+</html>

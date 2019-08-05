@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function emp(id, name, salary, age, doj){      // 5 Obj without using new Keyword
+          this.id=id;  
+          this.name=name;  
+          this.salary=salary;  
+          this.age=age;
+          this.doj=doj;
+        } 
+        emp={id:102,name:"Shyam Kumar",salary:40000,age:34,doj:Jan}  
+        document.write(emp.id+" "+emp.name+" "+emp.salary+" "+emp.age+" "+emp.doj);  
+    </script>
+</body>
+
+</html>

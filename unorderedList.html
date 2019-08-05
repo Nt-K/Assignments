@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Create a UL and LI element.</p>
+
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+        function myFunction() {
+            var x = document.createElement("UL");
+            x.setAttribute("id", "myUL");
+            document.body.appendChild(x);
+
+            var y = document.createElement("LI");
+            var t = document.createTextNode("TEA");
+            y.appendChild(t);
+            document.getElementById("myUL").appendChild(y);
+        }
+    </script>
+</body>
+
+</html>
